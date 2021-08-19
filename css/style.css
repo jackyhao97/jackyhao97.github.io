@@ -1,0 +1,115 @@
+html {
+   position: relative;
+}
+
+body {
+   margin-bottom: 100px;
+   margin-top: 30px  
+}
+
+.jumbotron {
+   height: 400px;
+   background-image: url('../img/header-bg3.jpg'); 
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: 0 -270px;
+   overflow: hidden;  
+   color: #fff;
+   text-shadow: 3px 3px 3px #333;
+}
+
+.jumbotron img {
+   width: 200px;
+   border: 5px solid #fff;
+   box-shadow: 1px 3px 3px #333;
+}
+
+hr {
+   border-top: 3px solid #999;
+   width: 250px
+}
+
+section {
+   min-height: 600px
+}
+
+section.about {
+   min-height: 400px
+}
+
+.pKiri, .pKanan {
+   opacity: 0;
+   transform: translate(-50px,0);
+   transition: 1s;   
+}
+
+.pKanan {
+   transform: translate(50px,0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+   opacity: 1;
+   transform: translate(0,0);
+}
+
+.contact {
+   min-height: 800px
+}
+
+.portfolio {
+   background-color: #eee
+}
+
+.portfolio .group {
+   opacity: 0;
+   -moz-transition: .5s;
+   -webkit-transition: .5s;
+   transition: .5s;
+   -moz-transform: translate(0, -40px);
+   -webkit-transform: translate(0, -40px);
+   transform: translate(0, -40px);   
+}
+
+.portfolio .group.muncul {
+   opacity: 1;
+   -webkit-transform: translate(0,0);
+   -moz-transform: translate(0,0);
+   transform: translate(0,0);
+}
+
+.portfolio .group .thumbnail {
+   overflow: hidden;
+}
+
+.portfolio .group .thumbnail img {
+   -webkit-transition: .5s;
+   -moz-transition: .5s;
+   -ms-transition: .5s;
+   -o-transition: .5s;
+   transition: .5s;
+}
+
+.portfolio .group .thumbnail img:hover {   
+   -webkit-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   -o-transform: scale(1.2);
+   transform : scale(1.2);
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 140px;
+   background-color: #333;
+   color: #fff;   
+}
+
+footer p {
+   margin-top: 40px;
+}
+
+footer p i {
+   color: salmon;
+}
