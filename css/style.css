@@ -37,7 +37,7 @@ body {
 
 .jumbotron .content-jumbotron img {
   width: 200px;
-  border: 5px solid #fff;
+  border: 2px solid #fff;
   box-shadow: 1px 3px 3px #333;
 }
 
@@ -71,12 +71,14 @@ section.about {
   transform: translate(0, 0);
 }
 
-.contact {
+section.contact,
+section.tech {
   min-height: 300px;
+  background-color: #eee;
 }
 
 .portfolio {
-  background-color: #eee;
+  background-color: white;
 }
 
 .portfolio .group {
@@ -144,6 +146,10 @@ footer p i {
   letter-spacing: 2px;
 }
 
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+
 .internal-container {
   display: flex;
   align-items: center;
@@ -169,7 +175,8 @@ footer p i {
   filter: grayscale(0);
 }
 
-.contact-container {
+.contact-container,
+.tech-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +192,8 @@ footer p i {
     align-items: center;
   }
 
-  .contact {
+  section.contact,
+  section.tech {
     min-height: 200px;
   }
 
