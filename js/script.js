@@ -1,7 +1,6 @@
 $(".page-scroll").on("click", function (e) {
   let tujuan = $(this).attr("href");
   let elemenTujuan = $(tujuan);
-  console.log(elemenTujuan.offset().top);
   $("html").animate(
     {
       scrollTop: elemenTujuan.offset().top - 50,
@@ -10,8 +9,12 @@ $(".page-scroll").on("click", function (e) {
     "easeInOutExpo"
   );
   e.preventDefault();
-  $("#bs-example-navbar-collapse-1").addClass("in");
-  $(".collapse").css("display", "none");
+
+  // Control on show/hide menu viewport mobile
+  $("#bs-example-navbar-collapse-1").removeClass("in");
+  $("#button-menu").on("toggle", () =>
+    $("#bs-example-navbar-collapse-1").toggleClass("in")
+  );
 });
 
 // about
