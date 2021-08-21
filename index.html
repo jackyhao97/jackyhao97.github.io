@@ -10,6 +10,12 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Titillium+Web:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +42,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#home" class="navbar-brand page-scroll">Jacky Hau</a>
+          <a href="#home" class="navbar-brand page-scroll jacky-hau"
+            >Jacky Hau</a
+          >
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,9 +61,11 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron text-center">
-      <img src="img/jackyhau.jpg" alt="jacky" class="img-circle" />
-      <h1>Jacky Hau,S.Kom</h1>
-      <p>Web Developer</p>
+      <div class="content-jumbotron">
+        <img src="img/jackyhau.jpg" alt="jacky" class="img-circle" />
+        <h1>Jacky Hau, S.Kom</h1>
+        <p>Web Developer</p>
+      </div>
     </div>
     <!-- Akhir jumbotron -->
 
@@ -64,7 +74,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h2 class="text-center">About</h2>
+            <h2 class="text-center headline">About</h2>
             <hr />
           </div>
         </div>
@@ -92,7 +102,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h2>Portfolio</h2>
+            <h2 class="headline">Portfolio</h2>
             <hr />
           </div>
         </div>
@@ -137,7 +147,7 @@
             </a>
           </div>
         </div>
-        <div class="row group">
+        <div class="row group internal-container">
           <div class="col-sm-4">
             <a
               href="https://sardanagroup.co.id"
@@ -147,23 +157,12 @@
               <img src="img/portfolio/sardana-group.png" alt="Sardana Group" />
             </a>
           </div>
-          <div class="col-sm-4">
-            <a
-              href="img/portfolio/e.PNG"
-              class="thumbnail"
-              data-lightbox="myPortfolio"
-            >
-              <img src="img/portfolio/e.png" alt="" />
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a
-              href="img/portfolio/f.PNG"
-              class="thumbnail"
-              data-lightbox="myPortfolio"
-            >
-              <img src="img/portfolio/f.png" alt="" />
-            </a>
+          <div class="col-sm-8">
+            <p>
+              And some internal modules to input testdrive for salesforce, to
+              request sales order cancellation, to maintain stock of gift
+              transaction, and to input prospect status lost order.
+            </p>
           </div>
         </div>
       </div>
@@ -175,7 +174,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h2>Contact</h2>
+            <h2 class="headline">Contact</h2>
             <hr />
           </div>
         </div>
