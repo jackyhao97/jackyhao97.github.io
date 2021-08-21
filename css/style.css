@@ -72,7 +72,7 @@ section.about {
 }
 
 .contact {
-  min-height: 800px;
+  min-height: 300px;
 }
 
 .portfolio {
@@ -151,4 +151,46 @@ footer p i {
 
 .headline {
   font-weight: 600;
+}
+
+.img-profile {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  width: 5%;
+  margin-right: 20px;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: grayscale(0);
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    background-position: -60px -30px;
+  }
+
+  .internal-container {
+    display: block;
+    align-items: center;
+  }
+
+  .contact {
+    min-height: 200px;
+  }
+
+  .logo {
+    filter: grayscale(0);
+    width: 8%;
+  }
 }
