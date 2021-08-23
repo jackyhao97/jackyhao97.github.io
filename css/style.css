@@ -182,6 +182,10 @@ footer p i {
   justify-content: center;
 }
 
+.typing {
+  font-weight: 600;
+}
+
 @media (max-width: 576px) {
   .jumbotron {
     background-position: -60px -30px;
