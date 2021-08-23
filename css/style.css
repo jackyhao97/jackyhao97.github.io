@@ -33,6 +33,7 @@ body {
 .jumbotron .content-jumbotron {
   position: relative;
   z-index: 1;
+  top: -20px;
 }
 
 .jumbotron .content-jumbotron img {
@@ -59,6 +60,7 @@ section.about {
   opacity: 0;
   transform: translate(-50px, 0);
   transition: 1s;
+  width: 80%;
 }
 
 .pKanan {
@@ -69,6 +71,7 @@ section.about {
 .pKanan.pMuncul {
   opacity: 1;
   transform: translate(0, 0);
+  width: 100%;
 }
 
 section.contact,
@@ -204,5 +207,9 @@ footer p i {
   .logo {
     filter: grayscale(0);
     width: 8%;
+  }
+
+  .jumbotron .content-jumbotron {
+    top: 0;
   }
 }
