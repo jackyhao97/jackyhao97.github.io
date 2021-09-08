@@ -59,3 +59,14 @@ const typed = new Typed(".typing", {
   backSpeed: 60,
   loop: true,
 });
+
+const darkmode = document.querySelector(".switch");
+const rounded = darkmode.querySelector(".rounded");
+
+darkmode.addEventListener("click", function() {  
+  rounded.classList.toggle("checked");
+  darkmode.classList.toggle("active");
+  document.body.classList.toggle("dark-theme");
+  tech.classList.toggle("bg-gray");
+  contact.classList.toggle("bg-gray");
+})

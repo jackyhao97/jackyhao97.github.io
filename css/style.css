@@ -6,6 +6,13 @@ body {
   margin-bottom: 100px;
   margin-top: 30px;
   font-family: "Titillium Web", sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+body.dark-theme {
+  color: #eee;
+  background: #121212;
 }
 
 .jumbotron {
@@ -76,12 +83,11 @@ section.about {
 
 section.contact,
 section.tech {
-  min-height: 300px;
-  background-color: #eee;
+  min-height: 300px;  
 }
 
-.portfolio {
-  background-color: white;
+.bg-gray {
+  background-color: #eee;
 }
 
 .portfolio .group {
@@ -187,6 +193,38 @@ footer p i {
 
 .typing {
   font-weight: 600;
+}
+
+.switch {
+  width: 50px;
+  height: 28px;
+  margin-bottom: 0;
+  border-radius: 10px;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.switch .rounded {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;  
+  transform: translateX(3px) translateY(4px);
+  transition: .3s;
+}
+
+.switch .rounded.checked {
+  transform: translateX(25px) translateY(4px);
+}
+
+.switch.active {
+  background: #6bacff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 @media (max-width: 576px) {
