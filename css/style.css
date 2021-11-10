@@ -83,7 +83,7 @@ section.about {
 
 section.contact,
 section.tech {
-  min-height: 300px;  
+  min-height: 300px;
 }
 
 .bg-gray {
@@ -173,22 +173,33 @@ footer p i {
   z-index: 2;
 }
 
-.logo {
-  width: 5%;
-  margin-right: 20px;
+.logo,
+.logo-contact {
+  width: 50%;
   filter: grayscale(1);
   cursor: pointer;
+  margin: auto;
 }
 
-.logo:hover {
+.logo-contact {
+  width: 5%;
+  margin: 0 20px 0;
+}
+
+.logo:hover,
+.logo-contact:hover {
   filter: grayscale(0);
 }
 
-.contact-container,
-.tech-container {
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .typing {
@@ -208,9 +219,9 @@ footer p i {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: white;  
+  background: white;
   transform: translateX(3px) translateY(4px);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .switch .rounded.checked {
@@ -242,9 +253,8 @@ footer p i {
     min-height: 200px;
   }
 
-  .logo {
-    filter: grayscale(0);
-    width: 8%;
+  .tech-container {
+    gap: 10px;
   }
 
   .jumbotron .content-jumbotron {
